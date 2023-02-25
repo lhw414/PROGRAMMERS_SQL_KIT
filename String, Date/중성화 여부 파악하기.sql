@@ -1,0 +1,9 @@
+-- 코드를 입력하세요
+(SELECT ANIMAL_ID,	NAME, "O" as "중성화"
+FROM ANIMAL_INS
+WHERE SEX_UPON_INTAKE like "Neutered%" or SEX_UPON_INTAKE like "Spayed%"
+UNION
+SELECT ANIMAL_ID,	NAME, "X" as "중성화"
+FROM ANIMAL_INS
+WHERE SEX_UPON_INTAKE like "Intact%")
+ORDER BY ANIMAL_ID
