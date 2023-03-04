@@ -23,8 +23,6 @@ SELECT BIT_LENGTH('가나다'), CHAR_LENGTH('가나다'), LENGTH('가나다');
 SELECT CONCAT('2020', '01', '01'); -- 붙이는 함수
 SELECT CONCAT_WS('-','2020', '01', '01'); -- 구분자 추가하여 붙이는 함수
 
-
-
 SELECT INSTR('abcd', 'b'); -- 첫번째 파라미터에서 두번째 파라미터를 검색하여 나온 갯수 반환 
 
 
